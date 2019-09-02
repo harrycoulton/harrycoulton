@@ -16,7 +16,6 @@ body {
     background-image: url("kazuend-19SC2oaVZW0-unsplash.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
 }
 
 
@@ -54,3 +53,20 @@ p {
 
 
 /* Home area */
+
+.home {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-container {
+    width: 60vh;
+    height: 60vh;
+    border-radius: 50%;
+    background-color: #ECFAEC;
+    border-color: #879908;
+    border-width: 2px;
+    border-style: groove;
+}
