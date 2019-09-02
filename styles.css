@@ -24,8 +24,10 @@ body {
 .navbar {
     background-color: #0A2A0A;
     height: 15vh;
+    width: 100%;
     border-bottom-left-radius: 25%;
     border-bottom-right-radius: 25%;
+    position: fixed;
     display: flex;
     justify-content: center;
 }
@@ -81,6 +83,21 @@ p {
     align-items: center;
     overflow-wrap: normal;
     font-size: 2rem;
+    padding: 20%;
+}
+
+.circle-inner-wrapper {
+    width: 75%;
+    height: 75%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle-inner {
+    padding: 5%;
 }
 
 .hex-icons {
