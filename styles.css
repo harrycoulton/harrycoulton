@@ -69,4 +69,25 @@ p {
     border-color: #879908;
     border-width: 2px;
     border-style: groove;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.center-circle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-wrap: normal;
+    font-size: 2rem;
+}
+
+.hex-icons {
+    font-size: 3rem;
+    color: #ECFAEC;
+}
+
+.hex-icons:hover {
+    color: #EDBCED;
 }
