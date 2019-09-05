@@ -1,152 +1,258 @@
-* {
-    box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
-    letter-spacing: .6px;
-    text-decoration: none;
-    text-transform: uppercase;
-}
-
-body {
-    padding: 0;
-    margin: 0;
-}
-
-.main-image-container {
-    background-image: url("kazuend-19SC2oaVZW0-unsplash.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-
-/* Navbar */
-
-.navbar {
-    background-color: rgba(10, 42, 10, 0.6);
-    height: 15vh;
-    width: 100%;
-    border-bottom-left-radius: 25%;
-    border-bottom-right-radius: 25%;
-    position: fixed;
-    display: flex;
-    justify-content: center;
-    z-index: 1;
-}
-
-.navbar-item-wrapper {
-    width: 70%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.navbar a,
-p {
-    color: #ECFAEC;
-    font-size: 1.5rem;
-}
-
-.navbar a:active {
-    color: pink;
-}
-
-.navbar a:hover {
-    color: #EDBCED;
-}
-
-
-/* Home area */
-
-.home {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.home-container {
-    width: 60vh;
-    height: 60vh;
-    border-radius: 50%;
-    background-color: #ECFAEC;
-    border-color: #879908;
-    border-width: 10px;
-    border-style: groove;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.center-circle {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    overflow-wrap: normal;
-    font-size: 2rem;
-    padding: 20%;
-}
-
-.circle-inner-wrapper {
-    width: 75%;
-    height: 75%;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.circle-inner {
-    padding: 5%;
-}
-
-.hex-icons {
-    font-size: 3rem;
-    color: #ECFAEC;
-}
-
-.hex-icons:hover {
-    color: #EDBCED;
-}
-
-
-/* About me */
-
-.about-me {
-    height: 85vh;
-    width: 100%;
-    background-color: #98B25B;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    border-style: dotted;
-    border-width: 1px;
-    border-color: red;
-}
-
-.navbar-bumper {
-    height: 15vh;
-    width: 100%;
-    background-color: #98B25B;
-    border-style: solid;
-    border-width: 1px;
-    border-color: red;
-}
-
-.face-name-container {
-    height: 180px;
-    width: 180px;
-    border-style: solid;
-    border-width: 1px;
-    border-color: red;
-}
-
-.proficiency-container {
-    height: 180px;
-    width: 180px;
-    border-style: solid;
-    border-width: 1px;
-    border-color: red;
-}
+    * {
+        box-sizing: border-box;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
+        letter-spacing: .6px;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+    
+    body {
+        padding: 0;
+        margin: 0;
+    }
+    
+    .main-image-container {
+        background-image: url("kazuend-19SC2oaVZW0-unsplash.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    /* Navbar */
+    
+    .navbar {
+        background-color: rgba(10, 42, 10, 0.6);
+        height: 15vh;
+        width: 100%;
+        border-bottom-left-radius: 25%;
+        border-bottom-right-radius: 25%;
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        z-index: 1;
+    }
+    
+    .navbar-item-wrapper {
+        width: 70%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    .navbar a,
+    p {
+        color: #ECFAEC;
+        font-size: 1.5rem;
+    }
+    
+    .navbar a:active {
+        color: pink;
+    }
+    
+    .navbar a:hover {
+        color: #EDBCED;
+    }
+    /* Home area */
+    
+    .home {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .home-container {
+        width: 60vh;
+        height: 60vh;
+        border-radius: 50%;
+        background-color: #ECFAEC;
+        border-color: #879908;
+        border-width: 10px;
+        border-style: groove;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .center-circle {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        overflow-wrap: normal;
+        font-size: 2rem;
+        padding: 20%;
+    }
+    
+    .circle-inner-wrapper {
+        width: 75%;
+        height: 75%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .circle-inner {
+        padding: 5%;
+    }
+    
+    .hex-icons {
+        font-size: 3rem;
+        color: #ECFAEC;
+    }
+    
+    .hex-icons:hover {
+        color: #EDBCED;
+    }
+    /* About me */
+    
+    .about-me {
+        height: 85vh;
+        width: 100%;
+        background-color: #98B25B;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    
+    .navbar-bumper {
+        height: 15vh;
+        width: 100%;
+        background-color: #98B25B;
+        border-style: solid;
+        border-width: 1px;
+        border-color: red;
+    }
+    /* Face/Name Hexes */
+    
+    .face-name-container {
+        height: 50%;
+        width: 70%;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    #face-hex {
+        width: 38vh;
+        height: 38vh;
+    }
+    
+    #name-hex {
+        width: 38vh;
+        height: 38vh;
+    }
+    
+    #face-hex-id {
+        background-color: #D2D8AB;
+    }
+    
+    #name-hex-id {
+        background-color: #D2D8AB;
+    }
+    
+    .hexagon-wrapper {
+        text-align: center;
+        margin: 20px;
+        position: relative;
+        display: inline-block;
+    }
+    
+    .hexagon {
+        height: 100%;
+        width: calc(100% * 0.57735);
+        display: inline-block;
+    }
+    
+    .hexagon:before {
+        position: absolute;
+        top: 0;
+        right: calc((100% / 2) - ((100% * 0.57735) / 2));
+        background-color: inherit;
+        height: inherit;
+        width: inherit;
+        content: '';
+        transform: rotateZ(60deg);
+    }
+    
+    .hexagon:after {
+        position: absolute;
+        top: 0;
+        right: calc((100% / 2) - ((100% * 0.57735) / 2));
+        background-color: inherit;
+        height: inherit;
+        width: inherit;
+        content: '';
+        transform: rotateZ(-60deg);
+    }
+    /* Proficiency Hexes */
+    
+    .proficiency-container {
+        height: 50%;
+        width: 95%;
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    #frontend-hex {
+        width: 30vh;
+        height: 30vh;
+    }
+    
+    #backend-hex {
+        width: 30vh;
+        height: 30vh;
+    }
+    
+    #other-hex {
+        width: 30vh;
+        height: 30vh;
+    }
+    
+    #frontend-hex-id {
+        background-color: #D2D8AB;
+    }
+    
+    #backend-hex-id {
+        background-color: #D2D8AB;
+    }
+    
+    #other-hex-id {
+        background-color: #D2D8AB;
+    }
+    
+    .proficiency-hexagon-wrapper {
+        text-align: center;
+        margin: 20px;
+        position: relative;
+        display: inline-block;
+    }
+    
+    .hexagon {
+        height: 100%;
+        width: calc(100% * 0.57735);
+        display: inline-block;
+    }
+    
+    .hexagon:before {
+        position: absolute;
+        top: 0;
+        right: calc((100% / 2) - ((100% * 0.57735) / 2));
+        background-color: inherit;
+        height: inherit;
+        width: inherit;
+        content: '';
+        transform: rotateZ(60deg);
+    }
+    
+    .hexagon:after {
+        position: absolute;
+        top: 0;
+        right: calc((100% / 2) - ((100% * 0.57735) / 2));
+        background-color: inherit;
+        height: inherit;
+        width: inherit;
+        content: '';
+        transform: rotateZ(-60deg);
+    }
