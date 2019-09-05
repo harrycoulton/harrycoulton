@@ -551,26 +551,72 @@
                 width: 100%;
             }
             
-            .portfolio-item-wrapper {
+            .portfolio-item-row {
                 display: flex;
                 justify-content: space-around;
-                align-items: center;
+                height: 350px;
                 width: 90%;
-                margin: 5% 0;
-                border: 1px solid red;
+                margin: 2% 0;
+                padding: 2% 2%;
             }
             
-            .portfolio-hex-wrapper {
-                display: flex;
-                align-items: center;
+            .portfolio-item {
+                width: 30%;
+                height: 100%;
+                position: relative;
             }
             
-            .portfolio-item-description {
-                width: 55%;
-                height: 90%;
-                background-color: #D2D8AB;
-                border-radius: 25px;
-                border: 10px #879908 groove;
+            .portfolio-item img {
+                height: inherit;
+                width: 100%;
+                opacity: 1;
+                display: block;
+                transition: .5s ease;
+                backface-visibility: hidden;
+            }
+            
+            .middle {
+                height: inherit;
+                width: 100%;
+                transition: .5s ease;
+                opacity: 0;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%);
+                text-align: center;
+            }
+            
+            .text-overlay {
+                height: inherit;
+                width: 100%;
+                transition: .5s ease;
+                opacity: 0;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%);
+                text-align: center;
+            }
+            
+            .portfolio-item:hover img {
+                opacity: 0.5;
+            }
+            
+            .portfolio-item:hover .text-overlay {
+                opacity: 1;
+            }
+            
+            .portfolio-item:hover .middle {
+                opacity: 0.5;
+                background-color: grey;
+            }
+            
+            .portfolio-image-hover-text {
+                color: black;
+                font-size: 3rem;
             }
             /* contact area */
             
@@ -585,7 +631,6 @@
                 font-size: 2rem;
                 text-align: center;
                 padding: 10px 30px;
-                border: 10px #879908 groove;
             }
             
             #icons-line {
@@ -602,7 +647,6 @@
                 justify-content: space-around;
                 align-items: center;
                 border-radius: 25px;
-                border: 10px #879908 groove;
             }
             
             .contact-area-item {
@@ -614,7 +658,6 @@
                 background-color: #D2D8AB;
                 border-radius: 25px;
                 font-size: 3.5rem;
-                border: 10px #879908 groove;
             }
             /* footer */
             
