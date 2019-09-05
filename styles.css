@@ -5,6 +5,7 @@
             letter-spacing: .6px;
             text-decoration: none;
             text-transform: uppercase;
+            scroll-behavior: smooth;
         }
         
         body {
