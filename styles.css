@@ -10,17 +10,19 @@
         body {
             padding: 0;
             margin: 0;
-        }
-        
-        .main-image-container {
             background-image: url("image-assets/kazuend-19SC2oaVZW0-unsplash.jpg");
             background-repeat: no-repeat;
             background-size: cover;
+            background-attachment: fixed;
+        }
+        
+        #hexagon {
+            fill: #D2D8AB;
         }
         /* Navbar */
         
         .navbar {
-            background-color: rgba(10, 42, 10, 0.6);
+            background-color: rgba(20, 32, 20, 0.6);
             height: 15vh;
             width: 100%;
             border-bottom-left-radius: 25%;
@@ -83,6 +85,10 @@
             padding: 20%;
         }
         
+        .face-name-sub {
+            font-size: 1.2rem;
+        }
+        
         .circle-inner-wrapper {
             width: 75%;
             height: 75%;
@@ -107,12 +113,6 @@
         }
         /* About me */
         
-        .about-me-navbar-bumper-container {
-            background-image: url(image-assets/forest-3742949.jpg);
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-        
         .about-me {
             height: 85vh;
             width: 100%;
@@ -130,98 +130,18 @@
         /* Face/Name Hexes */
         
         .face-name-container {
-            height: 50%;
-            width: 70%;
-            display: flex;
-            justify-content: space-between;
-        }
-        
-        #face-hex {
-            width: 32vh;
-            height: 32vh;
-        }
-        
-        #name-hex {
-            width: 32vh;
-            height: 32vh;
-        }
-        
-        #face-hex-id {
-            background-color: #D2D8AB;
-        }
-        
-        #name-hex-id {
-            background-color: #D2D8AB;
-        }
-        
-        .hexagon-wrapper {
-            text-align: center;
-            margin: 20px;
-            position: relative;
-            display: inline-block;
-        }
-        
-        .hexagon {
-            height: 100%;
-            width: calc(100% * 0.57735);
-            display: inline-block;
-        }
-        
-        .hexagon:before {
-            position: absolute;
-            top: 0;
-            right: calc((100% / 2) - ((100% * 0.57735) / 2));
-            background-color: inherit;
-            height: inherit;
-            width: inherit;
-            content: '';
-            transform: rotateZ(60deg);
-        }
-        
-        .hexagon:after {
-            position: absolute;
-            top: 0;
-            right: calc((100% / 2) - ((100% * 0.57735) / 2));
-            background-color: inherit;
-            height: inherit;
-            width: inherit;
-            content: '';
-            transform: rotateZ(-60deg);
-        }
-        /* Proficiency Hexes */
-        
-        .proficiency-container {
-            height: 50%;
+            height: 60%;
             width: 95%;
             display: flex;
             justify-content: space-around;
         }
+        /* Proficiency Hexes */
         
-        #frontend-hex {
-            width: 38vh;
-            height: 38vh;
-        }
-        
-        #backend-hex {
-            width: 38vh;
-            height: 38vh;
-        }
-        
-        #other-hex {
-            width: 38vh;
-            height: 38vh;
-        }
-        
-        #frontend-hex-id {
-            background-color: #D2D8AB;
-        }
-        
-        #backend-hex-id {
-            background-color: #D2D8AB;
-        }
-        
-        #other-hex-id {
-            background-color: #D2D8AB;
+        .proficiency-container {
+            height: 60%;
+            width: 95%;
+            display: flex;
+            justify-content: space-around;
         }
         
         .proficiency-hexagon-wrapper {
@@ -230,42 +150,11 @@
             position: relative;
             display: inline-block;
         }
-        
-        .hexagon {
-            height: 80%;
-            width: calc(100% * 0.57735);
-            display: inline-block;
-        }
-        
-        .hexagon:before {
-            position: absolute;
-            top: 0;
-            right: calc((100% / 2) - ((100% * 0.57735) / 2));
-            background-color: inherit;
-            height: inherit;
-            width: inherit;
-            content: '';
-            transform: rotateZ(60deg);
-        }
-        
-        .hexagon:after {
-            position: absolute;
-            top: 0;
-            right: calc((100% / 2) - ((100% * 0.57735) / 2));
-            background-color: inherit;
-            height: inherit;
-            width: inherit;
-            content: '';
-            transform: rotateZ(-60deg);
-        }
         /* Portfolio area */
         
         .portfolio-wrapper {
             height: 300vh;
             width: 100%;
-            background-image: url(image-assets/tree-4889.jpg);
-            background-repeat: no-repeat;
-            background-size: cover;
         }
         
         .navbar-bumper-portfolio {
@@ -300,8 +189,4 @@
             height: 90%;
             width: 55%;
             background-color: #D2D8AB;
-        }
-        
-        #hexagon {
-            fill: #D2D8AB;
         }
