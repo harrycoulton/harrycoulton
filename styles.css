@@ -117,13 +117,10 @@
         justify-content: space-around;
     }
     
-    .navbar-bumper {
+    .navbar-bumper-about-me {
         height: 15vh;
         width: 100%;
         background-color: #98B25B;
-        border-style: solid;
-        border-width: 1px;
-        border-color: red;
     }
     /* Face/Name Hexes */
     
@@ -135,13 +132,13 @@
     }
     
     #face-hex {
-        width: 38vh;
-        height: 38vh;
+        width: 32vh;
+        height: 32vh;
     }
     
     #name-hex {
-        width: 38vh;
-        height: 38vh;
+        width: 32vh;
+        height: 32vh;
     }
     
     #face-hex-id {
@@ -196,18 +193,18 @@
     }
     
     #frontend-hex {
-        width: 30vh;
-        height: 30vh;
+        width: 38vh;
+        height: 38vh;
     }
     
     #backend-hex {
-        width: 30vh;
-        height: 30vh;
+        width: 38vh;
+        height: 38vh;
     }
     
     #other-hex {
-        width: 30vh;
-        height: 30vh;
+        width: 38vh;
+        height: 38vh;
     }
     
     #frontend-hex-id {
@@ -223,6 +220,101 @@
     }
     
     .proficiency-hexagon-wrapper {
+        text-align: center;
+        margin: 20px;
+        position: relative;
+        display: inline-block;
+    }
+    
+    .hexagon {
+        height: 100%;
+        width: calc(100% * 0.57735);
+        display: inline-block;
+    }
+    
+    .hexagon:before {
+        position: absolute;
+        top: 0;
+        right: calc((100% / 2) - ((100% * 0.57735) / 2));
+        background-color: inherit;
+        height: inherit;
+        width: inherit;
+        content: '';
+        transform: rotateZ(60deg);
+    }
+    
+    .hexagon:after {
+        position: absolute;
+        top: 0;
+        right: calc((100% / 2) - ((100% * 0.57735) / 2));
+        background-color: inherit;
+        height: inherit;
+        width: inherit;
+        content: '';
+        transform: rotateZ(-60deg);
+    }
+    /* Portfolio area */
+    
+    .portfolio-wrapper {
+        height: 300vh;
+        width: 100%;
+        background-color: #638438;
+    }
+    
+    .navbar-bumper-portfolio {
+        height: 15vh;
+        width: 100%;
+        background-color: inherit;
+    }
+    
+    .portfolio-main-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        border: 1px solid red;
+        height: 250vh;
+        width: 100%;
+    }
+    
+    .portfolio-item-wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        border: 1px solid purple;
+        height: 30%;
+        width: 90%;
+    }
+    
+    .portfolio-item-hex {
+        display: flex;
+        border: 1px solid black;
+        height: 100%;
+        width: 45%;
+    }
+    
+    .portfolio-item-description {
+        display: flex;
+        border: 1px solid black;
+        height: 100%;
+        width: 45%;
+    }
+    /* Portfolio Hexes */
+    
+    .hexagon-wrapper {
+        height: auto;
+        width: 30%;
+    }
+    
+    #portfolio-item-hex {
+        width: 38vh;
+        height: 38vh;
+    }
+    
+    #portfolio-item-hex-id {
+        background-color: #D2D8AB;
+    }
+    
+    .portfolio-item-wrapper {
         text-align: center;
         margin: 20px;
         position: relative;
