@@ -1,687 +1,289 @@
-            /*! normalize.css v2.1.0 | MIT License | git.io/normalize */
-            /* ==========================================================================
-   HTML5 display definitions
-   ========================================================================== */
-            /**
- * Correct `block` display not defined in IE 8/9.
- */
-            
-            article,
-            aside,
-            details,
-            figcaption,
-            figure,
-            footer,
-            header,
-            hgroup,
-            main,
-            nav,
-            section,
-            summary {
-                display: block;
-            }
-            /**
- * Correct `inline-block` display not defined in IE 8/9.
- */
-            
-            audio,
-            canvas,
-            video {
-                display: inline-block;
-            }
-            /**
- * Prevent modern browsers from displaying `audio` without controls.
- * Remove excess height in iOS 5 devices.
- */
-            
-            audio:not([controls]) {
-                display: none;
-                height: 0;
-            }
-            /**
- * Address styling not present in IE 8/9.
- */
-            
-            [hidden] {
-                display: none;
-            }
-            /* ==========================================================================
-   Base
-   ========================================================================== */
-            /**
- * 1. Set default font family to sans-serif.
- * 2. Prevent iOS text size adjust after orientation change, without disabling
- *    user zoom.
- */
-            
-            html {
-                font-family: sans-serif;
-                /* 1 */
-                -webkit-text-size-adjust: 100%;
-                /* 2 */
-                -ms-text-size-adjust: 100%;
-                /* 2 */
-            }
-            /**
- * Remove default margin.
- */
-            
-            body {
-                margin: 0;
-            }
-            /* ==========================================================================
-   Links
-   ========================================================================== */
-            /**
- * Address `outline` inconsistency between Chrome and other browsers.
- */
-            
-            a:focus {
-                outline: thin dotted;
-            }
-            /**
- * Improve readability when focused and also mouse hovered in all browsers.
- */
-            
-            a:active,
-            a:hover {
-                outline: 0;
-            }
-            /* ==========================================================================
-   Typography
-   ========================================================================== */
-            /**
- * Address variable `h1` font-size and margin within `section` and `article`
- * contexts in Firefox 4+, Safari 5, and Chrome.
- */
-            
-            h1 {
-                font-size: 2em;
-                margin: 0.67em 0;
-            }
-            /**
- * Address styling not present in IE 8/9, Safari 5, and Chrome.
- */
-            
-            abbr[title] {
-                border-bottom: 1px dotted;
-            }
-            /**
- * Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
- */
-            
-            b,
-            strong {
-                font-weight: bold;
-            }
-            /**
- * Address styling not present in Safari 5 and Chrome.
- */
-            
-            dfn {
-                font-style: italic;
-            }
-            /**
- * Address differences between Firefox and other browsers.
- */
-            
-            hr {
-                -moz-box-sizing: content-box;
-                box-sizing: content-box;
-                height: 0;
-            }
-            /**
- * Address styling not present in IE 8/9.
- */
-            
-            mark {
-                background: #ff0;
-                color: #000;
-            }
-            /**
- * Correct font family set oddly in Safari 5 and Chrome.
- */
-            
-            code,
-            kbd,
-            pre,
-            samp {
-                font-family: monospace, serif;
-                font-size: 1em;
-            }
-            /**
- * Improve readability of pre-formatted text in all browsers.
- */
-            
-            pre {
-                white-space: pre-wrap;
-            }
-            /**
- * Set consistent quote types.
- */
-            
-            q {
-                quotes: "\201C" "\201D" "\2018" "\2019";
-            }
-            /**
- * Address inconsistent and variable font size in all browsers.
- */
-            
-            small {
-                font-size: 80%;
-            }
-            /**
- * Prevent `sub` and `sup` affecting `line-height` in all browsers.
- */
-            
-            sub,
-            sup {
-                font-size: 75%;
-                line-height: 0;
-                position: relative;
-                vertical-align: baseline;
-            }
-            
-            sup {
-                top: -0.5em;
-            }
-            
-            sub {
-                bottom: -0.25em;
-            }
-            /* ==========================================================================
-   Embedded content
-   ========================================================================== */
-            /**
- * Remove border when inside `a` element in IE 8/9.
- */
-            
-            img {
-                border: 0;
-            }
-            /**
- * Correct overflow displayed oddly in IE 9.
- */
-            
-            svg:not(:root) {
-                overflow: hidden;
-            }
-            /* ==========================================================================
-   Figures
-   ========================================================================== */
-            /**
- * Address margin not present in IE 8/9 and Safari 5.
- */
-            
-            figure {
-                margin: 0;
-            }
-            /* ==========================================================================
-   Forms
-   ========================================================================== */
-            /**
- * Define consistent border, margin, and padding.
- */
-            
-            fieldset {
-                border: 1px solid #c0c0c0;
-                margin: 0 2px;
-                padding: 0.35em 0.625em 0.75em;
-            }
-            /**
- * 1. Correct `color` not being inherited in IE 8/9.
- * 2. Remove padding so people aren't caught out if they zero out fieldsets.
- */
-            
-            legend {
-                border: 0;
-                /* 1 */
-                padding: 0;
-                /* 2 */
-            }
-            /**
- * 1. Correct font family not being inherited in all browsers.
- * 2. Correct font size not being inherited in all browsers.
- * 3. Address margins set differently in Firefox 4+, Safari 5, and Chrome.
- */
-            
-            button,
-            input,
-            select,
-            textarea {
-                font-family: inherit;
-                /* 1 */
-                font-size: 100%;
-                /* 2 */
-                margin: 0;
-                /* 3 */
-            }
-            /**
- * Address Firefox 4+ setting `line-height` on `input` using `!important` in
- * the UA stylesheet.
- */
-            
-            button,
-            input {
-                line-height: normal;
-            }
-            /**
- * Address inconsistent `text-transform` inheritance for `button` and `select`.
- * All other form control elements do not inherit `text-transform` values.
- * Correct `button` style inheritance in Chrome, Safari 5+, and IE 8+.
- * Correct `select` style inheritance in Firefox 4+ and Opera.
- */
-            
-            button,
-            select {
-                text-transform: none;
-            }
-            /**
- * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
- *    and `video` controls.
- * 2. Correct inability to style clickable `input` types in iOS.
- * 3. Improve usability and consistency of cursor style between image-type
- *    `input` and others.
- */
-            
-            button,
-            html input[type="button"],
-            /* 1 */
-            
-            input[type="reset"],
-            input[type="submit"] {
-                -webkit-appearance: button;
-                /* 2 */
-                cursor: pointer;
-                /* 3 */
-            }
-            /**
- * Re-set default cursor for disabled elements.
- */
-            
-            button[disabled],
-            html input[disabled] {
-                cursor: default;
-            }
-            /**
- * 1. Address box sizing set to `content-box` in IE 8/9.
- * 2. Remove excess padding in IE 8/9.
- */
-            
-            input[type="checkbox"],
-            input[type="radio"] {
-                box-sizing: border-box;
-                /* 1 */
-                padding: 0;
-                /* 2 */
-            }
-            /**
- * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
- * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
- *    (include `-moz` to future-proof).
- */
-            
-            input[type="search"] {
-                -webkit-appearance: textfield;
-                /* 1 */
-                -moz-box-sizing: content-box;
-                -webkit-box-sizing: content-box;
-                /* 2 */
-                box-sizing: content-box;
-            }
-            /**
- * Remove inner padding and search cancel button in Safari 5 and Chrome
- * on OS X.
- */
-            
-            input[type="search"]::-webkit-search-cancel-button,
-            input[type="search"]::-webkit-search-decoration {
-                -webkit-appearance: none;
-            }
-            /**
- * Remove inner padding and border in Firefox 4+.
- */
-            
-            button::-moz-focus-inner,
-            input::-moz-focus-inner {
-                border: 0;
-                padding: 0;
-            }
-            /**
- * 1. Remove default vertical scrollbar in IE 8/9.
- * 2. Improve readability and alignment in all browsers.
- */
-            
-            textarea {
-                overflow: auto;
-                /* 1 */
-                vertical-align: top;
-                /* 2 */
-            }
-            /* ==========================================================================
-   Tables
-   ========================================================================== */
-            /**
- * Remove most spacing between table cells.
- */
-            
-            table {
-                border-collapse: collapse;
-                border-spacing: 0;
-            }
-            
-            * {
-                box-sizing: border-box;
-                font-family: 'Montserrat', sans-serif;
-                font-weight: bold;
-                letter-spacing: .6px;
-                text-decoration: none;
-                text-transform: uppercase;
-                scroll-behavior: smooth;
-            }
-            
-            body {
-                padding: 0;
-                margin: 0;
-                background-image: url("image-assets/pier-407252.jpg");
-                background-repeat: no-repeat;
-                background-size: cover;
-                background-attachment: fixed;
-            }
-            
-            .everything {
-                background-color: rgba(210, 216, 171, 0.1);
-            }
-            
-            .hexagon {
-                fill: #D2D8AB;
-            }
-            
-            .icon {
-                font-size: 1.5rem;
-            }
-            
-            .icon:visited {
-                color: white;
-            }
-            
-            svg
-            /* ratio is 175:200 */
-            
-            {
-                width: 175px;
-                height: 200px;
-            }
-            /* Navbar */
-            
-            .navbar {
-                background-color: rgba(20, 32, 20, 0.6);
-                height: 15vh;
-                width: 100%;
-                border-bottom-left-radius: 25%;
-                border-bottom-right-radius: 25%;
-                position: fixed;
-                display: flex;
-                justify-content: center;
-                z-index: 1;
-            }
-            
-            .navbar-item-wrapper {
-                width: 70%;
-                display: flex;
-                justify-content: space-around;
-                align-items: center;
-            }
-            
-            .navbar a,
-            p {
-                color: #ECFAEC;
-                font-size: 1.5rem;
-            }
-            
-            .navbar a:active {
-                color: pink;
-            }
-            
-            .navbar a:hover {
-                color: #EDBCED;
-            }
-            /* Home area */
-            
-            .home {
-                height: 100vh;
-                display: flex;
-                justify-content: space-around;
-                align-items: center;
-            }
-            
-            .home-container {
-                border-radius: 50%;
-                background-color: rgba(20, 32, 20, 0.9);
-                color: #ECFAEC;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                padding: 20px;
-            }
-            
-            .floating-home-icon i {
-                font-size: 6rem;
-                color: rgba(20, 32, 20, 0.9);
-            }
-            
-            .center-circle {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                overflow-wrap: normal;
-                font-size: 2rem;
-            }
-            
-            .face-name-sub {
-                font-size: 1.5rem;
-            }
-            
-            .circle-inner-wrapper {
-                width: 75%;
-                height: 75%;
-                text-align: center;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-            }
-            
-            .circle-inner {
-                padding: 5%;
-            }
-            
-            .hex-icons:hover {
-                color: #EDBCED;
-            }
-            /* About me */
-            
-            .about-me {
-                width: 100%;
-                height: 100vh;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                font-size: 2rem;
-                color: #ECFAEC;
-            }
-            
-            .navbar-bumper {
-                height: 15vh;
-                width: 100%;
-                background: transparent;
-            }
-            
-            .parallax-banner {
-                background-color: rgba(20, 32, 20, 1);
-                padding: 3vh;
-                font-size: 1.5rem;
-                color: #ECFAEC;
-                text-align: center;
-                width: 100%;
-            }
-            
-            .about-me-container-frontend {
-                background-image: url("image-assets/antelope-canyon-1128815.jpg");
-                background-attachment: fixed;
-                background-position: center;
-                background-repeat: no-repeat;
-                background-size: cover;
-                display: flex;
-                justify-content: center;
-            }
-            
-            .about-me-container-backend {
-                background-image: url("image-assets/sunset-1757593.jpg");
-                background-attachment: fixed;
-                background-position: center;
-                background-repeat: no-repeat;
-                background-size: cover;
-                display: flex;
-                justify-content: center;
-                border: 1px solid red;
-            }
-            
-            .about-me-blurb-container {
-                width: 30%;
-                border: 3px solid rgba(20, 32, 20, 0.9);
-            }
-            
-            .proficiency-container {
-                background-color: rgba(20, 32, 20, 0.6);
-                text-align: center;
-                border-radius: 25px;
-                margin: 8% 0;
-            }
-            
-            .proficiency-icon {
-                font-size: 7rem;
-                color: white;
-                padding: 10px;
-            }
-            /* Portfolio area */
-            
-            .portfolio-wrapper {
-                width: 100%;
-            }
-            
-            .portfolio-main-container {
-                display: flex;
-                flex-direction: column;
-                justify-content: flex-start;
-                align-items: center;
-                width: 100%;
-            }
-            
-            .portfolio-item-row {
-                display: flex;
-                justify-content: space-around;
-                height: 350px;
-                width: 90%;
-                margin: 2% 0;
-                padding: 2% 2%;
-            }
-            
-            .portfolio-item {
-                width: 30%;
-                height: 100%;
-                position: relative;
-            }
-            
-            .portfolio-item img {
-                height: inherit;
-                width: 100%;
-                opacity: 1;
-                display: block;
-                transition: .5s ease;
-                backface-visibility: hidden;
-            }
-            
-            .middle {
-                height: inherit;
-                width: 100%;
-                transition: .5s ease;
-                opacity: 0;
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                -ms-transform: translate(-50%, -50%);
-                text-align: center;
-            }
-            
-            .text-overlay {
-                height: inherit;
-                width: 100%;
-                transition: .5s ease;
-                opacity: 0;
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                -ms-transform: translate(-50%, -50%);
-                text-align: center;
-            }
-            
-            .portfolio-item:hover img {
-                opacity: 0.5;
-            }
-            
-            .portfolio-item:hover .text-overlay {
-                opacity: 1;
-            }
-            
-            .portfolio-item:hover .middle {
-                opacity: 0.5;
-                background-color: grey;
-            }
-            
-            .portfolio-image-hover-text {
-                color: black;
-                font-size: 3rem;
-            }
-            /* contact area */
-            
-            .contact-area {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: space-around;
-                width: 100%;
-                height: 78vh;
-                background-image: url("image-assets/wood-2045379.jpg");
-                background-attachment: fixed;
-                background-position: center;
-                background-repeat: no-repeat;
-                background-size: cover;
-            }
-            
-            .icons-line {
-                display: flex;
-                justify-content: space-evenly;
-                width: 70%;
-                font-size: 1.5rem;
-                color: #ECFAEC;
-            }
-            
-            .icons-line i {
-                color: white;
-                font-size: 6rem;
-            }
-            
-            .contact-area-item {
-                padding: 10px;
-                font-size: 1.5rem;
-            }
-            
-            .contact-area-icon {
-                background-color: #D2D8AB;
-                border-radius: 25px;
-                font-size: 3.5rem;
-            }
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    letter-spacing: .6px;
+    text-decoration: none;
+    text-transform: uppercase;
+    scroll-behavior: smooth;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-image: url("image-assets/pier-407252.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.icon {
+    font-size: 1.5rem;
+}
+
+.icon:visited {
+    color: #FAFAFA;
+}
+
+
+/* Navbar */
+
+nav {
+    background-color: rgba(20, 32, 20, 0.6);
+    height: 15vh;
+    width: 100%;
+    border-bottom-left-radius: 25%;
+    border-bottom-right-radius: 25%;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+}
+
+.navbar-item-wrapper {
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav a,
+p {
+    color: #ECFAEC;
+    font-size: 1.5rem;
+}
+
+nav a:hover {
+    color: #EDBCED;
+}
+
+
+/* Home area */
+
+.home {
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.home-container {
+    border-radius: 50%;
+    background-color: rgba(20, 32, 20, 0.2);
+    color: rgb(31, 34, 31);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.floating-home-icon i {
+    font-size: 6rem;
+    color: rgba(20, 32, 20, 0.9);
+}
+
+.center-circle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-wrap: normal;
+    font-size: 2rem;
+}
+
+.face-name-sub {
+    font-size: 1.5rem;
+}
+
+.circle-inner-wrapper {
+    width: 75%;
+    height: 75%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle-inner {
+    padding: 5%;
+}
+
+.hex-icons:hover {
+    color: #EDBCED;
+}
+
+
+/* About me */
+
+.about-me {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 2rem;
+    color: #ECFAEC;
+}
+
+.navbar-bumper {
+    height: 15vh;
+    width: 100%;
+}
+
+.parallax-banner {
+    background-color: rgba(20, 32, 20, 1);
+    padding: 3vh;
+    font-size: 1.5rem;
+    color: #ECFAEC;
+    text-align: center;
+    width: 100%;
+}
+
+.about-me-container-frontend {
+    background-image: url("image-assets/antelope-canyon-1128815.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+
+.about-me-container-backend {
+    background-image: url("image-assets/sunset-1757593.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+
+.proficiency-container {
+    background-color: rgba(20, 32, 20, 0.6);
+    text-align: center;
+    border-radius: 25px;
+    margin: 20vh 0;
+}
+
+.proficiency-icon {
+    font-size: 7rem;
+    color: #FAFAFA;
+    padding: 10px;
+}
+
+
+/* Portfolio area */
+
+.portfolio-main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+}
+
+.portfolio-item-row {
+    display: flex;
+    justify-content: space-around;
+    height: 350px;
+    width: 90%;
+    margin: 5vh 0;
+}
+
+.portfolio-item {
+    width: 30%;
+    height: 100%;
+    position: relative;
+    border-radius: 25px;
+}
+
+.portfolio-item img {
+    height: inherit;
+    width: 100%;
+    opacity: 1;
+    display: block;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    border-radius: 25px;
+}
+
+.text-overlay {
+    height: inherit;
+    width: 100%;
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    border-radius: 25px;
+    background-color: rgba(195, 202, 195, 0.5)
+}
+
+.portfolio-item:hover img {
+    opacity: 0.5;
+}
+
+.portfolio-item:hover .text-overlay {
+    opacity: 1;
+}
+
+.portfolio-item:hover .middle {
+    opacity: 0.5;
+    background-color: grey;
+}
+
+.portfolio-image-hover-text {
+    color: black;
+    font-size: 3rem;
+}
+
+
+/* contact area */
+
+.contact-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 78vh;
+    background-image: url("image-assets/wood-2045379.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.icons-line {
+    display: flex;
+    justify-content: space-evenly;
+    width: 70%;
+    font-size: 1.5rem;
+    color: #ECFAEC;
+}
+
+.icons-line i {
+    color: #FAFAFA;
+    font-size: 6rem;
+}
+
+.contact-area-item {
+    padding: 10px;
+    font-size: 1.5rem;
+}
+
+.contact-area-icon {
+    background-color: #D2D8AB;
+    border-radius: 25px;
+    font-size: 3.5rem;
+}
