@@ -42,12 +42,6 @@ body {
 }
 
 
-/* ie 11 */
-
-@media all and (-ms-high-contrast: none),
-(-ms-high-contrast: active) {}
-
-
 /* Navbar */
 
 .navbar {
@@ -79,7 +73,7 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin: 0 auto;
+    margin: 30px auto;
 }
 
 nav a,
