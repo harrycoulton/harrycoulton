@@ -22,6 +22,17 @@ body {
     background-attachment: fixed;
 }
 
+@media screen and (max-width: 500px) {
+    body {
+        padding: 0;
+        margin: 0;
+        background-image: linear-gradient(to bottom, #2e3f38, #45594c, #5f7360, #7d8e73, #9faa87);
+    }
+    .center-circle {
+        color: #ECFAEC;
+    }
+}
+
 .icon {
     font-size: 1.5rem;
 }
@@ -29,6 +40,12 @@ body {
 .icon:visited {
     color: #FAFAFA;
 }
+
+
+/* ie 11 */
+
+@media all and (-ms-high-contrast: none),
+(-ms-high-contrast: active) {}
 
 
 /* Navbar */
@@ -41,8 +58,6 @@ body {
     border-bottom-right-radius: 25%;
     position: fixed;
     z-index: 1;
-    display: flex;
-    justify-content: space-evenly;
 }
 
 @media screen and (max-width: 768px) {
@@ -64,6 +79,7 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin: 0 auto;
 }
 
 nav a,
@@ -271,7 +287,7 @@ nav a:hover {
     }
     .portfolio-item {
         width: 200px;
-        height: 200px;
+        height: 180px;
         position: relative;
         border-radius: 25px;
         margin: 10px;
@@ -316,10 +332,6 @@ nav a:hover {
 /* contact area */
 
 .contact-area {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
     width: 100%;
     height: 78vh;
     background-image: url("image-assets/wood-2045379.jpg");
@@ -330,8 +342,8 @@ nav a:hover {
 }
 
 .icons-line {
-    display: flex;
-    justify-content: space-evenly;
+    text-align: center;
+    margin: 0 auto;
     width: 70%;
     font-size: 1.5rem;
     color: #ECFAEC;
@@ -340,6 +352,7 @@ nav a:hover {
 .icons-line i {
     color: #FAFAFA;
     font-size: 6rem;
+    margin: 100px 100px 100px 100px;
 }
 
 .contact-area-item {
@@ -351,4 +364,40 @@ nav a:hover {
     background-color: #D2D8AB;
     border-radius: 25px;
     font-size: 3.5rem;
+}
+
+@media screen and (max-width: 860px) {
+    .contact-area {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        height: 78vh;
+        background-image: url("image-assets/wood-2045379.jpg");
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .icons-line {
+        display: flex;
+        justify-content: space-around;
+        width: 70%;
+        font-size: 1.5rem;
+        color: #ECFAEC;
+    }
+    .icons-line i {
+        color: #FAFAFA;
+        font-size: 6rem;
+        margin: 100px 80px 100px 80px;
+    }
+    .contact-area-item {
+        padding: 10px;
+        font-size: 1.5rem;
+    }
+    .contact-area-icon {
+        background-color: #D2D8AB;
+        border-radius: 25px;
+        font-size: 3.5rem;
+    }
 }
