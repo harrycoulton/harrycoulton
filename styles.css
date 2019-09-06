@@ -135,12 +135,12 @@ nav a:hover {
     }
     .floating-home-icon-github {
         position: absolute;
-        bottom: 180px;
+        bottom: 130px;
         left: 20%;
     }
     .floating-home-icon-linkedin {
         position: absolute;
-        bottom: 180px;
+        bottom: 130px;
         right: 20%;
     }
 }
@@ -269,9 +269,6 @@ nav a:hover {
         align-items: center;
         width: 90%;
     }
-}
-
-@media screen and (max-width: 768px) {
     .portfolio-item {
         width: 200px;
         height: 200px;
