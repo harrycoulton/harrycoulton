@@ -33,16 +33,16 @@ body {
 
 /* Navbar */
 
-nav {
+.navbar {
     background-color: rgba(20, 32, 20, 0.6);
     height: 15vh;
     width: 100%;
     border-bottom-left-radius: 25%;
     border-bottom-right-radius: 25%;
     position: fixed;
-    display: flex;
-    justify-content: center;
     z-index: 1;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .navbar-item-wrapper {
@@ -231,15 +231,6 @@ nav a:hover {
 
 .portfolio-item:hover img {
     opacity: 0.5;
-}
-
-.portfolio-item:hover .text-overlay {
-    opacity: 1;
-}
-
-.portfolio-item:hover .middle {
-    opacity: 0.5;
-    background-color: grey;
 }
 
 .portfolio-image-hover-text {
