@@ -16,7 +16,7 @@ table {
 body {
     padding: 0;
     margin: 0;
-    background-image: url("image-assets/stone-1052500.jpg");
+    background-image: url("image-assets/sunset-1757593.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -41,12 +41,24 @@ body {
     color: #FAFAFA;
 }
 
+.navbar-bumper {
+    position: absolute;
+    bottom: 110px;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar-bumper {
+        position: absolute;
+        bottom: 30px;
+    }
+}
+
 
 /* Navbar */
 
 .navbar {
     background-color: rgba(20, 32, 20, 0.6);
-    height: 15vh;
+    height: 130px;
     width: 100%;
     border-bottom-left-radius: 25%;
     border-bottom-right-radius: 25%;
@@ -204,18 +216,6 @@ nav a:hover {
     color: #ECFAEC;
 }
 
-.navbar-bumper {
-    height: 15vh;
-    width: 100%;
-}
-
-@media screen and (max-width: 768px) {
-    .navbar-bumper {
-        height: 50px;
-        width: 100%;
-    }
-}
-
 .parallax-banner {
     background-color: rgba(20, 32, 20, 1);
     padding: 3vh;
@@ -226,24 +226,24 @@ nav a:hover {
 }
 
 .about-me-container-frontend {
-    background-image: url("image-assets/frontendstone.jpg");
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
     display: flex;
     justify-content: center;
+    background-image: url("image-assets/stone-1052500.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 .about-me-container-backend {
-    background-image: url("image-assets/backendstone.jpg");
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
     display: flex;
     justify-content: center;
     position: relative;
+    background-image: url("image-assets/stone-1052500 copy.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 .proficiency-container {
@@ -257,11 +257,6 @@ nav a:hover {
     font-size: 7rem;
     color: #FAFAFA;
     padding: 10px;
-}
-
-#portfolio-invisible-sneaky-boi {
-    position: absolute;
-    bottom: 120px;
 }
 
 @media screen and (max-width: 768px) {
@@ -280,6 +275,11 @@ nav a:hover {
     justify-content: flex-start;
     align-items: center;
     width: 100%;
+    background-image: url("image-assets/sunset-1757593 REVERSED.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    position: relative;
 }
 
 .portfolio-item-row {
@@ -287,6 +287,7 @@ nav a:hover {
     width: 90%;
     margin: 5vh 0;
     text-align: center;
+    position: relative;
 }
 
 .portfolio-item {
@@ -388,7 +389,7 @@ nav a:hover {
 
 .contact-area {
     width: 100%;
-    height: 78vh;
+    height: 82vh;
     background-image: url("image-assets/antelope-canyon-1128815.jpg");
     background-attachment: fixed;
     background-position: center;
