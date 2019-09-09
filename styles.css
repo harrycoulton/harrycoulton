@@ -16,7 +16,7 @@ table {
 body {
     padding: 0;
     margin: 0;
-    background-image: url("image-assets/pier-407252.jpg");
+    background-image: url("image-assets/sunset-1757593.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -41,12 +41,24 @@ body {
     color: #FAFAFA;
 }
 
+.navbar-bumper {
+    position: absolute;
+    bottom: 110px;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar-bumper {
+        position: absolute;
+        bottom: 30px;
+    }
+}
+
 
 /* Navbar */
 
 .navbar {
     background-color: rgba(20, 32, 20, 0.6);
-    height: 15vh;
+    height: 130px;
     width: 100%;
     border-bottom-left-radius: 25%;
     border-bottom-right-radius: 25%;
@@ -90,6 +102,13 @@ p {
     }
 }
 
+@media screen and (max-width: 350px) {
+    nav a,
+    p {
+        font-size: 0.5rem;
+    }
+}
+
 nav a:hover {
     color: #EDBCED;
 }
@@ -111,8 +130,8 @@ nav a:hover {
 
 .home-container {
     border-radius: 50%;
-    background-color: rgba(20, 32, 20, 0.2);
-    color: rgb(31, 34, 31);
+    background-color: rgba(20, 32, 20, 0.6);
+    color: rgb(223, 223, 223);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -122,8 +141,6 @@ nav a:hover {
 @media screen and (max-width: 768px) {
     .home-container {
         border-radius: 50%;
-        background-color: rgba(20, 32, 20, 0.2);
-        color: rgb(31, 34, 31);
         display: flex;
         justify-content: center;
         align-items: center;
@@ -199,11 +216,6 @@ nav a:hover {
     color: #ECFAEC;
 }
 
-.navbar-bumper {
-    height: 15vh;
-    width: 100%;
-}
-
 .parallax-banner {
     background-color: rgba(20, 32, 20, 1);
     padding: 3vh;
@@ -214,23 +226,24 @@ nav a:hover {
 }
 
 .about-me-container-frontend {
-    background-image: url("image-assets/antelope-canyon-1128815.jpg");
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
     display: flex;
     justify-content: center;
+    background-image: url("image-assets/stone-1052500.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 .about-me-container-backend {
-    background-image: url("image-assets/sunset-1757593.jpg");
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
     display: flex;
     justify-content: center;
+    position: relative;
+    background-image: url("image-assets/stone-1052500 copy.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 .proficiency-container {
@@ -246,6 +259,13 @@ nav a:hover {
     padding: 10px;
 }
 
+@media screen and (max-width: 768px) {
+    #portfolio-invisible-sneaky-boi {
+        position: absolute;
+        bottom: 50px;
+    }
+}
+
 
 /* Portfolio area */
 
@@ -255,29 +275,46 @@ nav a:hover {
     justify-content: flex-start;
     align-items: center;
     width: 100%;
+    background-image: url("image-assets/sunset-1757593 REVERSED.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    position: relative;
 }
 
 .portfolio-item-row {
-    display: flex;
-    justify-content: space-around;
     height: 350px;
     width: 90%;
-    margin: 20vh 5vh;
+    margin: 5vh 0;
+    text-align: center;
+    position: relative;
 }
 
 .portfolio-item {
-    width: 30%;
+    display: inline-block;
+    width: 25%;
     height: 100%;
     position: relative;
     border-radius: 25px;
+    margin: 0 35px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 990px) {
+    .portfolio-main-container {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+    }
     .portfolio-item-row {
+        height: 600px;
         display: flex;
         flex-direction: column;
         align-items: center;
         width: 90%;
+        padding: 10px;
     }
     .portfolio-item {
         width: 200px;
@@ -285,6 +322,28 @@ nav a:hover {
         position: relative;
         border-radius: 25px;
         margin: 10px;
+    }
+    .text-overlay {
+        height: 180px;
+        width: 100%;
+        transition: .5s ease;
+        opacity: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        text-align: center;
+        border-radius: 25px;
+        background-color: rgba(195, 202, 195, 0.5);
+        color: black;
+        font-size: 1rem;
+    }
+    .text-overlay:hover {
+        height: 180px;
+        opacity: 0.8;
+        font-size: 1rem;
+        color: black;
     }
 }
 
@@ -299,7 +358,7 @@ nav a:hover {
 }
 
 .text-overlay {
-    height: inherit;
+    height: 100%;
     width: 100%;
     transition: .5s ease;
     opacity: 0;
@@ -310,16 +369,19 @@ nav a:hover {
     -ms-transform: translate(-50%, -50%);
     text-align: center;
     border-radius: 25px;
-    background-color: rgba(195, 202, 195, 0.5)
+    background-color: rgba(195, 202, 195, 0.5);
+    color: black;
+}
+
+.text-overlay:hover {
+    opacity: 0.8;
+    color: black;
+    text-align: center;
+    padding: 30% 0;
 }
 
 .portfolio-item:hover img {
     opacity: 0.5;
-}
-
-.portfolio-image-hover-text {
-    color: black;
-    font-size: 3rem;
 }
 
 
@@ -327,8 +389,8 @@ nav a:hover {
 
 .contact-area {
     width: 100%;
-    height: 78vh;
-    background-image: url("image-assets/wood-2045379.jpg");
+    height: 82vh;
+    background-image: url("image-assets/antelope-canyon-1128815.jpg");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -349,6 +411,11 @@ nav a:hover {
     margin: 100px 100px 100px 100px;
 }
 
+.icons-line .fa-envelope {
+    border-radius: 25px;
+    background-size: 2px;
+}
+
 .contact-area-item {
     padding: 10px;
     font-size: 1.5rem;
@@ -367,7 +434,7 @@ nav a:hover {
         align-items: center;
         justify-content: space-around;
         height: 78vh;
-        background-image: url("image-assets/wood-2045379.jpg");
+        background-image: url("image-assets/antelope-canyon-1128815.jpg");
         background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;
@@ -393,5 +460,19 @@ nav a:hover {
         background-color: #D2D8AB;
         border-radius: 25px;
         font-size: 3.5rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .contact-area {
+        height: 90vh;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .icons-line i {
+        color: #FAFAFA;
+        font-size: 4rem;
+        margin: 20px 40px 20px 40px;
     }
 }
