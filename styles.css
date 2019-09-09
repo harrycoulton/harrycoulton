@@ -26,7 +26,6 @@ body {
     body {
         padding: 0;
         margin: 0;
-        background-image: linear-gradient(to bottom, #2e3f38, #45594c, #5f7360, #7d8e73, #9faa87);
     }
     .center-circle {
         color: #ECFAEC;
