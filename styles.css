@@ -30,7 +30,7 @@ a:hover {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    width: 7%;
+    width: 10%;
     height: 100vh;
     animation: slidein 7s linear;
     animation-delay: 0s;
@@ -39,8 +39,8 @@ a:hover {
 
 .text {
     position: absolute;
-    top: 300px;
-    left: 400px;
+    top: 200px;
+    left: 350px;
     color: #CF5A2B;
     font-size: 2rem;
     opacity: 0;
