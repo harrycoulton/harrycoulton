@@ -1,477 +1,105 @@
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
-}
-
 * {
+    font-family: 'Raleway', sans-serif;
     box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
-    letter-spacing: .6px;
+    margin: 0;
     text-decoration: none;
-    text-transform: uppercase;
-    scroll-behavior: smooth;
 }
 
 body {
+    position: relative;
+    background-color: #142266;
     padding: 0;
     margin: 0;
-    background-image: url("image-assets/sunset-1757593.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
 }
 
-@media screen and (max-width: 500px) {
-    body {
-        padding: 0;
-        margin: 0;
-    }
-    .center-circle {
-        color: #ECFAEC;
-    }
+a {
+    color: white;
 }
 
-.icon {
-    font-size: 1.5rem;
+a:hover {
+    color: rgb(117, 84, 84);
 }
 
-.icon:visited {
-    color: #FAFAFA;
-}
-
-.navbar-bumper {
-    position: absolute;
-    bottom: 110px;
-}
-
-@media screen and (max-width: 768px) {
-    .navbar-bumper {
-        position: absolute;
-        bottom: 30px;
-    }
-}
-
-
-/* Navbar */
-
-.navbar {
-    background-color: rgba(20, 32, 20, 0.6);
-    height: 130px;
-    width: 100%;
-    border-bottom-left-radius: 25%;
-    border-bottom-right-radius: 25%;
+.nav {
+    background-color: #25240e75;
+    font-size: 2rem;
     position: fixed;
-    z-index: 1;
-}
-
-@media screen and (max-width: 768px) {
-    .navbar {
-        background-color: rgba(20, 32, 20, 0.6);
-        height: 50px;
-        width: 100vw;
-        border-bottom-left-radius: 25%;
-        border-bottom-right-radius: 25%;
-        position: fixed;
-        z-index: 1;
-        display: flex;
-        justify-content: space-evenly;
-    }
-}
-
-.navbar-item-wrapper {
-    width: 70%;
+    top: 0;
+    left: 0;
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    margin: 30px auto;
-}
-
-nav a,
-p {
-    color: #ECFAEC;
-    font-size: 1.5rem;
-}
-
-@media screen and (max-width: 960px) {
-    nav a,
-    p {
-        color: #ECFAEC;
-        font-size: 0.8rem;
-    }
-}
-
-@media screen and (max-width: 350px) {
-    nav a,
-    p {
-        font-size: 0.5rem;
-    }
-}
-
-nav a:hover {
-    color: #EDBCED;
-}
-
-.navbar-divider {
-    color: rgb(161, 161, 161);
-}
-
-
-/* Home area */
-
-.home {
+    width: 7%;
     height: 100vh;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    position: relative;
+    animation: slidein 7s linear;
+    animation-delay: 0s;
+    animation-fill-mode: forwards;
 }
 
-.home-container {
-    border-radius: 50%;
-    background-color: rgba(20, 32, 20, 0.6);
-    color: rgb(223, 223, 223);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-}
-
-@media screen and (max-width: 768px) {
-    .home-container {
-        border-radius: 50%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 20px;
-        position: absolute;
-        top: 180px;
-    }
-}
-
-.floating-home-icon i {
-    font-size: 6rem;
-    color: rgba(20, 32, 20, 0.9);
-}
-
-@media screen and (max-width: 768px) {
-    .floating-home-icon i {
-        font-size: 6rem;
-        color: rgba(219, 219, 219, 0.9);
-    }
-    .floating-home-icon-github {
-        position: absolute;
-        bottom: 130px;
-        left: 20%;
-    }
-    .floating-home-icon-linkedin {
-        position: absolute;
-        bottom: 130px;
-        right: 20%;
-    }
-}
-
-.center-circle {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    overflow-wrap: normal;
-    font-size: 2rem;
-}
-
-.face-name-sub {
-    font-size: 1.5rem;
-}
-
-.circle-inner-wrapper {
-    width: 75%;
-    height: 75%;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.circle-inner {
-    padding: 5%;
-}
-
-.hex-icons:hover {
-    color: #EDBCED;
-}
-
-
-/* About me */
-
-.about-me {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-size: 2rem;
-    color: #ECFAEC;
-}
-
-.parallax-banner {
-    background-color: rgba(20, 32, 20, 1);
-    padding: 3vh;
-    font-size: 1.5rem;
-    color: #ECFAEC;
-    text-align: center;
-    width: 100%;
-}
-
-.about-me-container-frontend {
-    display: flex;
-    justify-content: center;
-    background-image: url("image-assets/stone-1052500.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-}
-
-.about-me-container-backend {
-    display: flex;
-    justify-content: center;
-    position: relative;
-    background-image: url("image-assets/stone-1052500 copy.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-}
-
-.proficiency-container {
-    background-color: rgba(20, 32, 20, 0.6);
-    text-align: center;
-    border-radius: 25px;
-    margin: 20vh 0;
-}
-
-.proficiency-icon {
-    font-size: 7rem;
-    color: #FAFAFA;
-    padding: 10px;
-}
-
-@media screen and (max-width: 768px) {
-    #portfolio-invisible-sneaky-boi {
-        position: absolute;
-        bottom: 50px;
-    }
-}
-
-
-/* Portfolio area */
-
-.portfolio-main-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    width: 100%;
-    background-image: url("image-assets/sunset-1757593 REVERSED.jpg");
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center;
-    position: relative;
-}
-
-.portfolio-item-row {
-    height: 350px;
-    width: 90%;
-    margin: 5vh 0;
-    text-align: center;
-    position: relative;
-}
-
-.portfolio-item {
-    display: inline-block;
-    width: 25%;
-    height: 100%;
-    position: relative;
-    border-radius: 25px;
-    margin: 0 35px;
-}
-
-@media screen and (max-width: 990px) {
-    .portfolio-main-container {
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
-        width: 100%;
-    }
-    .portfolio-item-row {
-        height: 600px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 90%;
-        padding: 10px;
-    }
-    .portfolio-item {
-        width: 200px;
-        height: 180px;
-        position: relative;
-        border-radius: 25px;
-        margin: 10px;
-    }
-    .text-overlay {
-        height: 180px;
-        width: 100%;
-        transition: .5s ease;
-        opacity: 0;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-        text-align: center;
-        border-radius: 25px;
-        background-color: rgba(195, 202, 195, 0.5);
-        color: black;
-        font-size: 1rem;
-    }
-    .text-overlay:hover {
-        height: 180px;
-        opacity: 0.8;
-        font-size: 1rem;
-        color: black;
-    }
-}
-
-.portfolio-item img {
-    height: inherit;
-    width: 100%;
-    opacity: 1;
-    display: block;
-    transition: .5s ease;
-    backface-visibility: hidden;
-    border-radius: 25px;
-}
-
-.text-overlay {
-    height: 100%;
-    width: 100%;
-    transition: .5s ease;
-    opacity: 0;
+.text {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    text-align: center;
-    border-radius: 25px;
-    background-color: rgba(195, 202, 195, 0.5);
-    color: black;
+    top: 300px;
+    left: 400px;
+    color: #CF5A2B;
+    font-size: 2rem;
+    opacity: 0;
+    animation: appear 1s linear;
+    animation-delay: 1.5s;
+    animation-fill-mode: forwards;
+    text-shadow: -1px -1px 0 #FFF, 1px -1px 0 #FFF, -1px 1px 0 #FFF, 1px 1px 0 #Fff;
 }
 
-.text-overlay:hover {
-    opacity: 0.8;
-    color: black;
-    text-align: center;
-    padding: 30% 0;
-}
-
-.portfolio-item:hover img {
-    opacity: 0.5;
-}
-
-
-/* contact area */
-
-.contact-area {
+.pattern {
+    height: 99vh;
     width: 100%;
-    height: 82vh;
-    background-image: url("image-assets/antelope-canyon-1128815.jpg");
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
-.icons-line {
-    text-align: center;
-    margin: 0 auto;
-    width: 70%;
-    font-size: 1.5rem;
-    color: #ECFAEC;
+.path {
+    fill: rgba(183, 164, 66, 0.304);
+    fill-opacity: 0;
+    font-size: 4rem;
+    stroke: rgba(183, 164, 66, 0.304);
+    stroke-width: 1;
+    stroke-dasharray: 550;
+    stroke-dashoffset: 552;
+    animation: dash 1s linear, fill 1.5s linear;
+    animation-fill-mode: forwards;
+    animation-delay: 0.5s;
 }
 
-.icons-line i {
-    color: #FAFAFA;
-    font-size: 6rem;
-    margin: 100px 100px 100px 100px;
-}
-
-.icons-line .fa-envelope {
-    border-radius: 25px;
-    background-size: 2px;
-}
-
-.contact-area-item {
-    padding: 10px;
-    font-size: 1.5rem;
-}
-
-.contact-area-icon {
-    background-color: #D2D8AB;
-    border-radius: 25px;
-    font-size: 3.5rem;
-}
-
-@media screen and (max-width: 860px) {
-    .contact-area {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
-        height: 78vh;
-        background-image: url("image-assets/antelope-canyon-1128815.jpg");
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-    .icons-line {
-        display: flex;
-        justify-content: space-around;
-        width: 70%;
-        font-size: 1.5rem;
-        color: #ECFAEC;
-    }
-    .icons-line i {
-        color: #FAFAFA;
-        font-size: 6rem;
-        margin: 100px 80px 100px 80px;
-    }
-    .contact-area-item {
-        padding: 10px;
-        font-size: 1.5rem;
-    }
-    .contact-area-icon {
-        background-color: #D2D8AB;
-        border-radius: 25px;
-        font-size: 3.5rem;
+@keyframes dash {
+    to {
+        stroke-dashoffset: 0;
     }
 }
 
-@media screen and (max-width: 768px) {
-    .contact-area {
-        height: 90vh;
+@keyframes fill {
+    to {
+        fill-opacity: 1;
     }
 }
 
-@media screen and (max-width: 350px) {
-    .icons-line i {
-        color: #FAFAFA;
-        font-size: 4rem;
-        margin: 20px 40px 20px 40px;
+@keyframes appear {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slidein {
+    0% {
+        margin-left: -800px;
+    }
+    20% {
+        margin-left: -800px;
+    }
+    35% {
+        margin-left: 0px;
+    }
+    100% {
+        margin-left: 0px;
     }
 }
