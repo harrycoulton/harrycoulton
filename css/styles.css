@@ -3,6 +3,7 @@
     box-sizing: border-box;
     margin: 0;
     text-decoration: none;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -34,6 +35,7 @@ a:hover {
     height: 100vh;
     animation: slidein 4s linear;
     animation-fill-mode: forwards;
+    z-index: 10;
 }
 
 .icons {
@@ -41,7 +43,11 @@ a:hover {
     justify-content: space-around;
 }
 
-.text {
+.homeContainer {
+    height: 100vh;
+}
+
+.home {
     position: absolute;
     top: 200px;
     left: 350px;
@@ -54,7 +60,7 @@ a:hover {
     /* text-shadow: -1px -1px 0 #FFF, 1px -1px 0 #FFF, -1px 1px 0 #FFF, 1px 1px 0 #Fff; */
 }
 
-.text a,
+.home a,
 .contact-area a {
     color: white;
     margin: 30px 0;
@@ -72,7 +78,7 @@ i {
     animation-timing-function: ease-in-out;
 }
 
-.text a:hover {
+.home a:hover {
     color: rgb(239, 102, 48);
 }
 
@@ -191,7 +197,7 @@ i {
     justify-content: flex-start;
     align-items: center;
     width: 100%;
-    width: 80%;
+    width: 100%;
     visibility: hidden;
     opacity: 0;
     animation: appear-display 2s linear 1s forwards, appear 1s linear 1.5s forwards;

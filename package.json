@@ -1,0 +1,23 @@
+{
+  "name": "harrycoulton",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/harrycoulton/harrycoulton.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/harrycoulton/harrycoulton/issues"
+  },
+  "homepage": "https://github.com/harrycoulton/harrycoulton#readme",
+  "dependencies": {
+    "animejs": "^3.1.0"
+  }
+}
