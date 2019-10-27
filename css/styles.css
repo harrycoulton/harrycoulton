@@ -7,10 +7,7 @@
 }
 
 body {
-    position: relative;
     background-color: rgb(14, 12, 41);
-    padding: 0;
-    margin: 0;
 }
 
 a {
@@ -38,7 +35,7 @@ a:hover {
 
 .nav {
     background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.342), rgba(14, 12, 41, 0.2));
-    font-size: 2rem;
+    font-size: 1.5rem;
     position: fixed;
     top: 0;
     left: 0;
@@ -56,6 +53,23 @@ a:hover {
 .icons {
     display: flex;
     justify-content: space-around;
+}
+
+@media screen and (max-width: 850px) {
+    .nav {
+        background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.342), rgba(14, 12, 41, 0.2));
+        font-size: 1rem;
+        position: fixed;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        width: 100vw;
+        height: 10vh;
+        animation: slidein 4s linear;
+        animation-fill-mode: forwards;
+        z-index: 10;
+    }
 }
 
 /* Home */ 
@@ -117,6 +131,41 @@ i {
     z-index: -1;
 }
 
+@media screen and (max-width: 500px) {
+
+    .homeContainer {
+        display: flex; 
+        justify-content: center;
+        align-items: center;
+    }
+    .home {
+        position: static;
+        color: rgb(249, 106, 49);
+        font-size: 1.2rem;
+        opacity: 0;
+        animation: appear 1s linear;
+        animation-delay: 1.5s;
+        animation-fill-mode: forwards;
+        width: 90%; 
+    }
+    .home h1 {
+        display: none; 
+    }
+    .home a,
+.contact-area a {
+    color: white;
+    margin: 10px 0;
+    font-size: 3rem;
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+.home a {
+    margin-top: 100px; 
+}
+}
+
 /* About me */
 
 .about {
@@ -128,7 +177,7 @@ i {
 }
 
 .aboutContainer {
-    max-height: 70vh; 
+    min-height: 70vh; 
     margin-top: 40px;
     width: 70%; 
     background: rgba(36, 31, 63, 0.404); 
@@ -156,8 +205,43 @@ i {
     padding: 30px 0 60px 0;  
 }
 
+@media screen and (max-width: 500px) {
+    
+.aboutContainer {
+    min-height: 70vh; 
+    margin-top: 20px;
+    width: 70%; 
+    background: rgba(36, 31, 63, 0.404); 
+    border-radius: 25px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.aboutContainer h3 {
+    font-size: 2rem;
+    color: rgb(231, 153, 121);
+    padding: 15px 0 30px 0; 
+}
+
+.aboutContainer p {
+    font-size: 1.2rem;
+    padding: 15px 0 0px 0; 
+}
+
+.aboutContainer ul {
+    list-style: none;
+    font-size: 1.2rem;
+    padding: 15px 0 30px 0;  
+}
+
+}
+
 
 /* Skills */
+
+.skills
 
 .skillsContainer {
     width: 100%;
@@ -165,7 +249,6 @@ i {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     font-size: 2rem;
     color: #ECFAEC;
 }
@@ -179,6 +262,36 @@ i {
     font-size: 7rem;
     color: #FAFAFA;
     padding: 10px;
+}
+
+@media screen and (max-width: 850px) {
+    .proficiency-container {
+        text-align: center;
+        margin: 30vh 0;
+        width: 80%; 
+    }
+    
+    .proficiency-icon {
+        font-size: 3.5rem;
+        color: #FAFAFA;
+        padding: 5px;
+    }
+}
+@media screen and (max-width: 300px) {
+    .proficiency-container {
+        text-align: center;
+        width: 80%; 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .proficiency-icon {
+        font-size: 3.5rem;
+        color: #FAFAFA;
+        padding: 5px;
+    }
 }
 
 /* Portfolio */
@@ -225,9 +338,9 @@ i {
   }
 
   .portfolio-description {
-      max-width: 50%;
       display: flex; 
       flex-direction: column;
+      margin: 10vh; 
   }
 
   .portfolio-description h3 {
@@ -257,11 +370,10 @@ i {
     background: gray; 
     border: 1px solid white; 
     border-radius: 25px; 
-    max-width: 20%; 
   }
 
-@media screen and (max-width: 990px) {
-    .portfolio-main-container {
+@media screen and (max-width: 850px) {
+    .portfolio {
         height: 100%;
         display: flex;
         flex-direction: column;
@@ -269,21 +381,25 @@ i {
         align-items: center;
         width: 100%;
     }
-    .portfolio-item-row {
-        height: 600px;
+    .item-row {
         display: flex;
         flex-direction: column;
-        align-items: center;
         width: 90%;
-        padding: 10px;
+        
     }
-    .portfolio-item {
-        width: 200px;
-        height: 180px;
-        position: relative;
+    .portfolio-tile{
+        width: 100%; 
+      }
+    .portfolio-description{
+        width: 90%; 
+    }
+    .portfolio-tile img { 
+        position: relative; 
+        left: -80px; 
+        height: 250px;
+        width: 200px; 
         border-radius: 25px;
-        margin: 10px;
-    }
+      }
 }
 
 .portfolio-item img {
