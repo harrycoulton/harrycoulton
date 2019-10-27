@@ -21,6 +21,19 @@ a:hover {
     color: rgb(241, 191, 171);
 }
 
+.path {
+    fill: rgba(143, 127, 50, 0.304);
+    fill-opacity: 0;
+    font-size: 4rem;
+    stroke: rgb(145, 130, 57);
+    stroke-width: 1;
+    stroke-dasharray: 550;
+    stroke-dashoffset: 552;
+    animation: dash 1s linear, fill 1.5s linear;
+    animation-fill-mode: forwards;
+    animation-delay: 0.5s;
+}
+
 /* Navbar */ 
 
 .nav {
@@ -81,21 +94,20 @@ i {
     animation-timing-function: ease-in-out;
 }
 
-.home a:hover {
-    color: rgb(239, 102, 48);
-}
-
-#icon1,
-.proficiency-icon {
-    animation-delay: 2s;
+#icon1 {
+    animation-delay: 1.5s;
 }
 
 #icon2 {
-    animation-delay: 1s;
+    animation-delay: 3s;
 }
 
 #icon3 {
-    animation-delay: 1.5s;
+    animation-delay: 2s;
+}
+
+.home a:hover {
+    color: rgb(239, 102, 48);
 }
 
 .pattern {
@@ -108,7 +120,7 @@ i {
 /* About me */
 
 .about {
-    min-height: 110vh; 
+    min-height: 100vh;
     width: 100vw;
     display: flex;
     justify-content: center;
@@ -116,6 +128,8 @@ i {
 }
 
 .aboutContainer {
+    max-height: 70vh; 
+    margin-top: 40px;
     width: 70%; 
     background: rgba(36, 31, 63, 0.404); 
     border-radius: 25px;
@@ -126,90 +140,46 @@ i {
 }
 
 .aboutContainer h3 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     color: rgb(231, 153, 121);
     padding: 30px 0 60px 0; 
 }
 
 .aboutContainer p {
-    font-size: 2rem;
+    font-size: 1.5rem;
     padding: 30px 0 0px 0; 
 }
 
 .aboutContainer ul {
     list-style: none;
-    font-size: 2rem;
+    font-size: 1.5rem;
     padding: 30px 0 60px 0;  
 }
 
-.path {
-    fill: rgba(143, 127, 50, 0.304);
-    fill-opacity: 0;
-    font-size: 4rem;
-    stroke: rgb(145, 130, 57);
-    stroke-width: 1;
-    stroke-dasharray: 550;
-    stroke-dashoffset: 552;
-    animation: dash 1s linear, fill 1.5s linear;
-    animation-fill-mode: forwards;
-    animation-delay: 0.5s;
+
+/* Skills */
+
+.skillsContainer {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    color: #ECFAEC;
 }
 
-@keyframes dash {
-    to {
-        stroke-dashoffset: 0;
-        stroke: rgba(122, 109, 42, 0.2);
-    }
+.proficiency-container {
+    text-align: center;
+    margin: 20vh 0;
 }
 
-@keyframes fill {
-    to {
-        fill-opacity: 1;
-    }
+.proficiency-icon {
+    font-size: 7rem;
+    color: #FAFAFA;
+    padding: 10px;
 }
-
-@keyframes appear {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-@keyframes slidein {
-    0% {
-        margin-left: -800px;
-    }
-    20% {
-        margin-left: -800px;
-    }
-    35% {
-        margin-left: 0px;
-    }
-    100% {
-        margin-left: 0px;
-    }
-}
-
-@keyframes floating {
-    from {
-        transform: translate(0, 0px);
-    }
-    65% {
-        transform: translate(0, 5px);
-    }
-    to {
-        transform: translate(0, -0px);
-    }
-}
-
-@keyframes appear-display {
-    to {
-        visibility: visible;
-    }
-}
-
 
 /* Portfolio */
 .portfolio {
@@ -224,11 +194,15 @@ i {
   .item-row {
     display: flex;
     justify-content: space-around;
+    align-items: center;
     flex-direction: row;
-    height: 55vh; 
-    width: 80%; 
+    min-height: 55vh; 
+    width: 70%; 
     margin: 7vh 0; 
     color: white; 
+    padding: 20px;
+    border-radius: 25px;
+    background: rgba(56, 49, 158, 0.527);
   }
   
   .item-row-right {
@@ -240,8 +214,14 @@ i {
   }
   
   .portfolio-tile {
-    min-width: 30%; 
+    max-width: 30%; 
     height: 100%;
+  }
+
+  .portfolio-tile img {
+    width: 100%; 
+    height: 100%;
+    border-radius: 25px;
   }
 
   .portfolio-description {
@@ -249,11 +229,26 @@ i {
       display: flex; 
       flex-direction: column;
   }
+
+  .portfolio-description h3 {
+    font-size: 2rem;
+    color: rgb(249, 106, 49);
+    padding: 20px 0 10px 0; 
+    text-decoration: underline;
+}
+
+.portfolio-description p {
+    font-size: 1rem;
+    color: rgb(240, 170, 143);
+    padding: 10px 0; 
+}
   
   .skillTiles, .codeLinks {
       display: flex;
       flex-direction: row;
       justify-content: space-around;
+      padding: 10px 0; 
+      text-align: center;
   }
 
   .skill-tile {
@@ -382,33 +377,60 @@ i {
     }
 }
 
+/* Keyframes */ 
 
-/* About me */
 
-.skillsContainer {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: 2rem;
-    color: #ECFAEC;
+@keyframes dash {
+    to {
+        stroke-dashoffset: 0;
+        stroke: rgba(122, 109, 42, 0.2);
+    }
 }
 
-.about-me-container-backend,
-.about-me-container-frontend {
-    display: flex;
-    justify-content: center;
+@keyframes fill {
+    to {
+        fill-opacity: 1;
+    }
 }
 
-.proficiency-container {
-    text-align: center;
-    margin: 20vh 0;
+@keyframes appear {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
-.proficiency-icon {
-    font-size: 7rem;
-    color: #FAFAFA;
-    padding: 10px;
+@keyframes slidein {
+    0% {
+        margin-left: -800px;
+    }
+    20% {
+        margin-left: -800px;
+    }
+    35% {
+        margin-left: 0px;
+    }
+    100% {
+        margin-left: 0px;
+    }
+}
+
+@keyframes floating {
+    from {
+        transform: translate(0, 0px);
+    }
+    65% {
+        transform: translate(0, 5px);
+    }
+    to {
+        transform: translate(0, -0px);
+    }
+}
+
+@keyframes appear-display {
+    to {
+        visibility: visible;
+    }
 }
