@@ -21,8 +21,10 @@ a:hover {
     color: rgb(241, 191, 171);
 }
 
+/* Navbar */ 
+
 .nav {
-    background-image: linear-gradient(90deg, #25240e95, #25240e55, rgba(14, 12, 41, 0.2));
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.342), rgba(14, 12, 41, 0.2));
     font-size: 2rem;
     position: fixed;
     top: 0;
@@ -43,21 +45,22 @@ a:hover {
     justify-content: space-around;
 }
 
+/* Home */ 
+
 .homeContainer {
     height: 100vh;
 }
 
 .home {
     position: absolute;
-    top: 200px;
-    left: 350px;
+    top: 150px;
+    left: 250px;
     color: rgb(249, 106, 49);
-    font-size: 2rem;
+    font-size: 1.5rem;
     opacity: 0;
     animation: appear 1s linear;
     animation-delay: 1.5s;
     animation-fill-mode: forwards;
-    /* text-shadow: -1px -1px 0 #FFF, 1px -1px 0 #FFF, -1px 1px 0 #FFF, 1px 1px 0 #Fff; */
 }
 
 .home a,
@@ -82,16 +85,16 @@ i {
     color: rgb(239, 102, 48);
 }
 
-#linkedin,
+#icon1,
 .proficiency-icon {
     animation-delay: 2s;
 }
 
-#github {
+#icon2 {
     animation-delay: 1s;
 }
 
-#codepen {
+#icon3 {
     animation-delay: 1.5s;
 }
 
@@ -102,8 +105,41 @@ i {
     z-index: -1;
 }
 
-.about .pattern {
-    height: 600vh;
+/* About me */
+
+.about {
+    min-height: 110vh; 
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    color: white; 
+}
+
+.aboutContainer {
+    width: 70%; 
+    background: rgba(36, 31, 63, 0.404); 
+    border-radius: 25px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.aboutContainer h3 {
+    font-size: 3rem;
+    color: rgb(231, 153, 121);
+    padding: 30px 0 60px 0; 
+}
+
+.aboutContainer p {
+    font-size: 2rem;
+    padding: 30px 0 0px 0; 
+}
+
+.aboutContainer ul {
+    list-style: none;
+    font-size: 2rem;
+    padding: 30px 0 60px 0;  
 }
 
 .path {
@@ -117,15 +153,6 @@ i {
     animation: dash 1s linear, fill 1.5s linear;
     animation-fill-mode: forwards;
     animation-delay: 0.5s;
-}
-
-.about .path,
-.portfolio .path {
-    animation: dash 1s linear reverse;
-}
-
-.contact .path {
-    animation: dash 2s alternate forwards;
 }
 
 @keyframes dash {
@@ -185,40 +212,58 @@ i {
 
 
 /* Portfolio */
-
 .portfolio {
-    display: flex;
-    justify-content: center;
-}
-
-.portfolio-main-container {
-    display: flex;
+    width: 100%; 
+    min-height: 120vh;
+    display: flex; 
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    width: 100%;
-    width: 100%;
-    visibility: hidden;
-    opacity: 0;
-    animation: appear-display 2s linear 1s forwards, appear 1s linear 1.5s forwards;
-}
-
-.portfolio-item-row {
-    height: 350px;
-    width: 90%;
-    margin: 5vh 0;
-    text-align: center;
-    position: relative;
-}
-
-.portfolio-item {
-    display: inline-block;
-    width: 25%;
+  }
+  
+  .item-row {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    height: 55vh; 
+    width: 80%; 
+    margin: 7vh 0; 
+    color: white; 
+  }
+  
+  .item-row-right {
+    flex-direction: row;
+  }
+  
+  .item-row-left {
+    flex-direction: row-reverse;
+  }
+  
+  .portfolio-tile {
+    min-width: 30%; 
     height: 100%;
-    position: relative;
-    border-radius: 25px;
-    margin: 0 35px;
-}
+  }
+
+  .portfolio-description {
+      max-width: 50%;
+      display: flex; 
+      flex-direction: column;
+  }
+  
+  .skillTiles, .codeLinks {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+  }
+
+  .skill-tile {
+    padding: 8px; 
+    margin: 0 5px; 
+    background: gray; 
+    border: 1px solid white; 
+    border-radius: 25px; 
+    max-width: 20%; 
+  }
 
 @media screen and (max-width: 990px) {
     .portfolio-main-container {
@@ -244,67 +289,13 @@ i {
         border-radius: 25px;
         margin: 10px;
     }
-    .text-overlay {
-        height: 180px;
-        width: 100%;
-        transition: .5s ease;
-        opacity: 0;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-        text-align: center;
-        border-radius: 25px;
-        background-color: rgba(195, 202, 195, 0.5);
-        color: black;
-        font-size: 1rem;
-    }
-    .text-overlay:hover {
-        height: 180px;
-        opacity: 0.8;
-        font-size: 1rem;
-        color: black;
-    }
 }
 
 .portfolio-item img {
     height: inherit;
     width: 100%;
-    opacity: 1;
-    display: block;
-    transition: .5s ease;
-    backface-visibility: hidden;
     border-radius: 25px;
 }
-
-.text-overlay {
-    height: 100%;
-    width: 100%;
-    transition: .5s ease;
-    opacity: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    text-align: center;
-    border-radius: 25px;
-    background-color: rgba(195, 202, 195, 0.5);
-    color: black;
-}
-
-.text-overlay:hover {
-    opacity: 0.8;
-    color: black;
-    text-align: center;
-    padding: 30% 0;
-}
-
-.portfolio-item:hover img {
-    opacity: 0.5;
-}
-
 
 /* contact area */
 
