@@ -98,6 +98,10 @@ a:hover {
   animation-delay: 1.5s;
   animation-fill-mode: forwards; }
 
+  #mainName {
+    color: #5bdd33; 
+  }
+
 .home a,
 .contact-area a {
   color: white;
@@ -173,7 +177,8 @@ i {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  border: 3px solid rgb(219, 255, 58); }
 
 .aboutTitle {
   font-size: 3rem;
@@ -289,11 +294,11 @@ i {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  min-height: 55vh;
   width: 70%;
-  margin: 50px;
-  padding: 20px;
+  margin: 30px;
+  padding: 10px 40px;
   border-radius: 25px;
+  border: 3px solid rgb(219, 255, 58);
   background-color: rgba(228, 224, 200, 0.692); }
 
 .item-row-right {
@@ -315,7 +320,7 @@ width: 60%;  }
 
 .portfolio-description h3 {
   font-size: 2rem;
-  color: #a75230;
+  color: #bb4c20;
   padding: 20px 0 10px 0;
   text-decoration: underline; }
 
@@ -327,20 +332,19 @@ width: 60%;  }
 .skillTiles, .codeLinks {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  padding: 10px 0;
-  text-align: center; }
+  justify-content: flex-start;
+  padding: 10px 0;}
 
 .skill-tile {
-  padding: 8px;
+  padding: 12px;
   margin: 0 5px;
-  background: gray;
-  border: 1px solid white;
+  background: rgb(45, 72, 107);
+  border: 2px solid rgb(219, 255, 58);
   border-radius: 25px;
   font-size: 1rem; 
-  color: #dd6333;}
+  color: #5bdd33;}
   .codeLinks a{
-  color: #ff802c;
+  color: #ff8a2a;
   }
 
 @media screen and (max-width: 850px) {
@@ -356,7 +360,9 @@ width: 60%;  }
     flex-direction: column;
     width: 90%; }
   .portfolio-tile {
-    width: 100%; }
+    width: 100%;
+  display: flex;
+justify-content: center; }
   .portfolio-description {
     width: 90%; }
   .portfolio-tile img {
