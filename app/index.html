@@ -22,6 +22,7 @@
     <script src="https://kit.fontawesome.com/c4ef94e39c.js"></script>
     <script defer src="js/script.js"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -85,16 +86,20 @@
         <div class="homeMain">
             <div class="homeContainer">
                 <div class="jumbotron home" id="home">
-                    <h1 class="display-4" id="mainName">harry coulton</h1>
-                    <h2>full_stack_web_developer</h2>
+                    <h1 class="display-4" id="mainName">connecting_the_dots</h1>
+                    <h2>harry_coulton</h2>
+                    <h3>full_stack_web_developer</h3>
                     <div class="icons">
                         <a id="icon1" href="https://www.linkedin.com/in/harry-coulton-34986314a/" target="_blank">
                             <i class="fab fa-linkedin"></i>
                         </a>
                         <a id="icon2" href="https://github.com/harrycoulton" target="_blank">
                             <i class="fab fa-github"></i>
-                            <a id="icon3" href="https://codepen.io/harrycoulton" target="_blank">
-                                <i class="fab fa-codepen"></i></a>
+                            </a>
+                            <a id="icon3" href="Harry Coulton Tech CV 2019.pdf" target="_blank">
+                                <div class="cv"><i class="fas fa-file"></i>
+                                <p class="cvword">CV</p></div>
+                                </a>
                     </div>
                 </div>
             </div>
@@ -143,17 +148,39 @@
                     </div>
                 </div>
             </div>
-            
-            <div class="portfolio" id="portfolio">
+            <div class="portfolio-bumper" id="portfolio"></div>
+            <div class="portfolio">
+                <div class="item-row item-row-right" data-aos="fade-right">
+                    <div class="portfolio-tile">
+                        <a href="http://dev.maydenacademy.co.uk/students/2019/aug/harry/random_access_radio/app/" target="_blank">
+                            <img src="image-assets/expensesgif.gif" alt="">
+                        </a>
+                    </div>
+                    <div class="portfolio-description">
+                        <a href="https://www.youtube.com/watch?v=DYVbrfsVikY" target="_blank"><h3 class="item-name">Expenses Tracker</h3></a>
+                        <p class="item-desc">This app uses Slim as the PHP framework, and is my first object-oriented project using MVC.</p>
+                        <p class="item-desc">In the frontend, I've used Bootstrap, SASS, vanilla Javascript, and Jquery. I used typescript for the JS, and GULP as my taskrunner.</p>
+                        <div class="skillTiles">
+                            <span class="skill-tile">PHP 7.2</span>
+                            <span class="skill-tile">Slim</span>
+                            <span class="skill-tile">SASS</span>
+                            <span class="skill-tile">Javascript</span>
+                            <span class="skill-tile">Jquery</span>
+                        </div>
+                        <div class="codeLinks"><a href="https://github.com/harrycoulton/expenses-tracker" target="_blank" class="skill-tile">View Demo</a>
+                            <a href="https://www.youtube.com/watch?v=DYVbrfsVikY" target="_blank" class="skill-tile">View Code</a></div>
+                    </div>
+                </div>
                 <div class="item-row item-row-left" data-aos="fade-left">
                     <div class="portfolio-tile">
-                        <a href="http://dev.maydenacademy.co.uk/projects/2019Aug/2019-aug-bread-and-ifit/app/" target="_blank">
+                        <a hre
+                        f="http://dev.maydenacademy.co.uk/projects/2019Aug/2019-aug-bread-and-ifit/app/" target="_blank">
                             <img src="image-assets/breadandifits.gif" alt="">
                         </a>
                     </div>
                 <div class="portfolio-description">
                         <a href="http://dev.maydenacademy.co.uk/projects/2019Aug/2019-aug-bread-and-ifit/app/" target="_blank"><h3 class="item-name">Recipe Finder - Bread and Ifits</h3></a>
-                        <p class="item-desc">This group project involved using OOP PHP to send igredients to an api, which returns a series of recipes which match the ingredients.</p>
+                        <p class="item-desc">This group project involved using OOP PHP to send ingredients to an api, which returns a series of recipes which match the ingredients.</p>
                         <p class="item-desc">I was involved largely with the backend of this app, with a lot of my work focussing on sending and receiving data, along with handling the data into the desired formats.</p>
                         <p class="item-desc">This was my first large OOP project, for which I wrote several unit tests.</p>
                             <div class="skillTiles">
@@ -277,7 +304,6 @@
                         </a>
                     </div>
                 </div>
-    
         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
         <script>
             AOS.init();
